@@ -38,6 +38,7 @@ cd ..
 echo "install libQLBase"
 cd libQLBase
 cmake CMakeLists.txt -DCMAKE_INSTALL_PREFIX=$AGILE
+make install
 cd ..
 
 echo "install agiletelem"
