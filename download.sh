@@ -14,7 +14,7 @@ if [ "$2" != "-t" ] ; then
 fi
 
 echo "--------------"
-git clone https://$1@https://github.com/ASTRO-BO/PacketLib.git
+git clone https://$1@github.com/ASTRO-BO/PacketLib.git
 cd PacketLib
 if [ "$2" != "-t" ]; then
 	git checkout $TAG_PACKETLIB
