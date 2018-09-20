@@ -32,7 +32,7 @@ fi
 
 echo "install PacketLib"
 cd PacketLib
-make install prefix=$AGILE
+make install CPPFLAGS=-std=c++0x prefix=$AGILE
 cd ..
 
 echo "install libQLBase"
@@ -47,12 +47,12 @@ cd ..
 
 echo "install agilesci2"
 cd agilesci2
-make ${parallel} install prefix=$AGILE
+#make ${parallel} install prefix=$AGILE
 cd ..
 
 echo "install gtImporterELtelem"
 cd gtImporterELtelem
-make ${parallel} install prefix=$AGILE
+#make ${parallel} install prefix=$AGILE
 cd ..
 
 #if [ -z "$OPENCV" ] || [ -z $(env | grep "OPENCV=") ] ; then
