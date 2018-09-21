@@ -32,7 +32,7 @@ fi
 
 echo "install PacketLib"
 cd PacketLib
-make install CPPFLAGS=-std=c++0x prefix=$AGILE
+make install CPPFLAGS="-O3 -std=c++0x" prefix=$AGILE
 cd ..
 
 echo "install libQLBase"
@@ -43,7 +43,7 @@ cd ..
 
 echo "install agiletelem"
 cd libagiletelem
-make ${parallel} install prefix=$AGILE
+make ${parallel} install CPPFLAGS="-O3 -std=c++0x" prefix=$AGILE
 cd ..
 
 echo "install agilesci2"
